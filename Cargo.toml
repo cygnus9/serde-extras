@@ -1,0 +1,23 @@
+[package]
+name = "serde-extras"
+version = "0.1.0"
+edition = "2018"
+authors = ["Mark Swaanenburg"]
+license = "MIT/Apache-2.0"
+keywords = ["serde", "serialization", "deserialization", "to/from string"]
+categories = ["encoding"]
+readme = "README.md"
+documentation = "https://docs.rs/serde-extras"
+repository = "https://github.com/cygnus9/serde-extras"
+homepage = "https://github.com/cygnus9/serde-extras"
+description = """
+A lightweight crate providing utilities for serializing and deserializing types
+using their string representations with [Serde](https://serde.rs/).
+"""
+
+[dependencies]
+serde = { version = "1.0", default-features = false }
+
+[dev-dependencies]
+serde = { version = "*", default-features = false, features = ["derive"] }
+serde_json = "1.0"
